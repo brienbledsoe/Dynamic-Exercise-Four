@@ -1,19 +1,24 @@
+
 {
-  "name": "dynamic-exercise-four",
+  "name": "node-example",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "This example is so cool.",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/brienbledsoe/Dynamic-Exercise-Four.git"
+  "keywords": [
+    "example",
+    "heroku"
+  ],
+
+  "author": "jane-doe",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.9.8"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/brienbledsoe/Dynamic-Exercise-Four/issues"
-  },
-  "homepage": "https://github.com/brienbledsoe/Dynamic-Exercise-Four#readme"
+  "engines": {
+    "node": "10.x"
+  }
 }

@@ -1,4 +1,5 @@
-import 'firebase/database';
+
+const firebase = require('firebase/app');
 const express = require('express');
 const app= express();
 const port = process.env.PORT || 4000;
@@ -21,10 +22,10 @@ app.use('/static', express.static('public'))
 
 app.listen(port, () => console.log(`Example app listening on port${port}`))
 
-var firebase = require('firebase/app');
+
 require('firebase/auth');
 require('firebase/database');
 
-var app = firebase.initializeApp({""});
+app = firebase.initializeApp({""});
 
-console.log(app.database()); 
+console.log(app.database());

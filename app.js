@@ -1,4 +1,3 @@
-import * as firebase from 'firebase';
 import 'firebase/database';
 const express = require('express');
 const app= express();
@@ -10,7 +9,7 @@ const aboutRoute = require('./routes/about.js');
 
 app.use('/', indexRoute);
 app.use('/about', aboutRoute);
-console.log("firebase: ", firebase.database())
+
 /*
 app.get('/', (req,res) => res.send("Hello World!"));
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
@@ -21,3 +20,11 @@ app.use('/static', express.static('public'))
 //npm start in the terminal
 
 app.listen(port, () => console.log(`Example app listening on port${port}`))
+
+var firebase = require('firebase/app');
+require('firebase/auth');
+require('firebase/database');
+
+var app = firebase.initializeApp({""});
+
+console.log(app); 

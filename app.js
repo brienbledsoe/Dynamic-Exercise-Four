@@ -10,7 +10,7 @@ const aboutRoute = require('./routes/about.js');
 
 app.use('/', indexRoute);
 app.use('/about', aboutRoute);
-app = firebase.initializeApp({""});
+app = firebase.initializeApp("");
 
 console.log(app.database());
 /*

@@ -27,4 +27,4 @@ require('firebase/database');
 
 var app = firebase.initializeApp({""});
 
-console.log(app); 
+console.log(app.database()); 

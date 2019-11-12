@@ -4,7 +4,7 @@ const router = express.Router();
 
 var admin = require("firebase-admin");
 
-var serviceAccount = require("../adminFolder/");
+var serviceAccount = require('./adminFolder/dynamic-exercise-four-firebase-adminsdk-xwpei-7b0d1dff40.json');
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),

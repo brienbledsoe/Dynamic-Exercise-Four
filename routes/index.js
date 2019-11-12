@@ -14,7 +14,7 @@ let db = admin.firestore();
 
 router.get('/', (req,res) => (
   res.send(
-    db.collection('blog-posts').get()
+    db.collection('BlogPosts').get()
       .then(snapshot => {
           snapshot.forEach(doc => {
             console.log(doc.id, '=>', doc.data());

@@ -1,5 +1,4 @@
 
-var firebase = require('firebase');
 const express = require('express');
 const app= express();
 const port = process.env.PORT || 4000;
@@ -10,9 +9,7 @@ const aboutRoute = require('./routes/about.js');
 
 app.use('/', indexRoute);
 app.use('/about', aboutRoute);
-app = firebase.initializeApp("");
 
-console.log(app.database());
 /*
 app.get('/', (req,res) => res.send("Hello World!"));
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))

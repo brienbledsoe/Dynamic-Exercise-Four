@@ -6,7 +6,7 @@ const firebaseConfig = {
 	apiKey: "AIzaSyDj9MA-GRGG3TF_DivLiiqW4TV-OOIcuA0",
 	authDomain: "dynamic-exercise-four.firebaseio.com",
 	databaseURL: "https://dynamic-exercise-four.firebaseio.com",
-	projectID: "dynamic-exercise-four",
+	projectId: "dynamic-exercise-four",
 	//storeageBUcket: "",
 	//messagingSenderId: "",
 	//appID: "",

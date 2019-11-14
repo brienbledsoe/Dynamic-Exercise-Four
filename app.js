@@ -4,7 +4,7 @@ const app= express();
 const port = process.env.PORT || 4000;
 
 const indexRoute = require('./routes/index.js');
-const aboutRoute = require('./routes/about.js');
+const aboutRoute = require('./routes/posts.js');
 
 
 app.use('/', indexRoute);

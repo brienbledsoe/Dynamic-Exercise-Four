@@ -20,8 +20,10 @@ const db = firestoreDatabase.firestore();
 let posts = [];
 db.collection('BlogPosts').get()
 	.then(
-		BlogPosts => {
-			posts =  BlogPosts.data();
+		blogPosts => {
+      blogPosts.forEach(post => {
+			posts.push(post.data());
+    });
 			console.log('blogPosts',blogPosts);
 		}
 	)

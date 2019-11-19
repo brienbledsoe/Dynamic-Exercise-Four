@@ -5,10 +5,14 @@ const port = process.env.PORT || 4000;
 
 const indexRoute = require('./routes/index.js');
 const aboutRoute = require('./routes/posts.js');
-
+//Submit data
+const submitRoute = require('./routes/submit.js');
+/*Serve files in express*/
 
 app.use('/', indexRoute);
 app.use('/about', aboutRoute);
+//set submit data route
+app.use('/submit', submitRoute);
 
 /*
 app.get('/', (req,res) => res.send("Hello World!"));

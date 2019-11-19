@@ -13,7 +13,8 @@ app.use('/', indexRoute);
 app.use('/about', aboutRoute);
 //set submit data route
 app.use('/submit', submitRoute);
-
+//Here we're going to set up a form to submit from. We already have an
+//endpoint 
 /*
 app.get('/', (req,res) => res.send("Hello World!"));
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))

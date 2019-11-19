@@ -62,6 +62,6 @@ router.get("/", (req,res)=>{
     author: authorVal
   })
   .then(ref => res.send(ref));
-  .catch(e=> res.send(e));
+  .catch(e => res.send(e));
 })
 module.exports = router;

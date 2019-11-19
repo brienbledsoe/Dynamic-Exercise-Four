@@ -19,11 +19,14 @@ const firebaseConfig = {
  const db = firebase.firestore();
  /* **** End Firebase Config ***** */
  //Route: /post/:id
+ const getOptions = {
+   source:'cache'
+ }
 router.get("/:id", (req,res)=> {
   let queryID = req.params.id;
   let docRef = db.collection("BlogPosts").doc(queryID); //creating a reference to this docRef
   docRef //creating a reference of the document
-  .get() //getting the information were requesting, have to look at the docs to tell us what we are getting
+  .get(getOptions) //getting the information were requesting, have to look at the docs to tell us what we are getting
   .then(doc => res.send(doc.data())) // have to reference doc.data
   .catch(error => res.send(error));
 

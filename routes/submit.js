@@ -59,7 +59,7 @@ router.get("/", (req,res)=>{
     //will automatically generate an ID for this post
     title: titleVal,
     text: textVal,
-    author: authorVal
+    author: author
   })
   .then(ref => res.send(ref))
   .catch(e => res.send(e));

@@ -48,7 +48,7 @@ router.get("/test", (req,res)=>{
 
 })
 //submit data
-router.get("/", (req,res)={
+router.get("/", (req,res)=>{
   //need to get a URL parameter here in node, how do we do this?
   /* ex: localhost:4000/submit?title=title&text=text&author=authornamewhatever*/
   let titleVal = req.query.title ? req.query.title: '';

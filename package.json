@@ -16,7 +16,7 @@
   "dependencies": {
     "express": "^4.9.8",
     "firebase": "^7.2.3",
-    "firebase-admin": "^8.7.0"
+    "firebase-admin": "^11.4.1"
   },
   "engines": {
     "node": "10.x"
